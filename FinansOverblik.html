@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="FinansOverblik" />
+  <meta name="theme-color" content="#1e3a8a" />
+  
+  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+  <title>FinansOverblik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --sat: env(safe-area-inset-top);
+      --sab: env(safe-area-inset-bottom);
+      --sal: env(safe-area-inset-left);
+      --sar: env(safe-area-inset-right);
+    }
+    html, body { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; overscroll-behavior: none; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif; background: #0f172a; }
+    /* Dynamic Island / notch safe-area padding on the app root */
+    #root { padding-top: env(safe-area-inset-top); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); min-height: 100vh; min-height: 100dvh; }
+    /* Give bottom nav room for home-bar */
+    nav.fixed.bottom-0, .fixed.bottom-0 { padding-bottom: calc(env(safe-area-inset-bottom) + 8px) !important; }
+    /* Larger touch targets — minimum 44x44 per Apple HIG */
+    button, a, [role="button"] { min-height: 44px; touch-action: manipulation; }
+    button.h-8, button.h-9, button.h-10 { min-height: 44px; }
+    /* Hide scrollbars */
+    .overflow-x-auto::-webkit-scrollbar, .overflow-y-auto::-webkit-scrollbar { display: none; }
+    .overflow-x-auto, .overflow-y-auto { -ms-overflow-style: none; scrollbar-width: none; }
+    /* Disable pull-to-refresh rubber-band on main scroll */
+    main { overscroll-behavior-y: contain; }
+    /* Better tap feedback */
+    button:active, [role="button"]:active { transform: scale(0.97); transition: transform 0.08s ease; }
+    /* Prevent text-size adjust on rotate */
+    html { -webkit-text-size-adjust: 100%; }
+    #loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; background: linear-gradient(135deg, #1e3a8a, #4c1d95); padding-top: env(safe-area-inset-top); }
+  </style>
+  <script>
+    // Haptic feedback — iOS supports vibrate API, which maps to Taptic Engine lightly
+    window.haptic = (kind = 'light') => {
+      if (!('vibrate' in navigator)) return;
+      const patterns = { light: 10, medium: 18, heavy: 30, success: [10, 40, 10], error: [30, 30, 30] };
+      navigator.vibrate(patterns[kind] || 10);
+    };
+    // Global tap → light haptic on all buttons
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('button, [role="button"], a');
+      if (btn) window.haptic('light');
+    }, true);
+    // Prevent iOS double-tap zoom on buttons
+    document.addEventListener('dblclick', (e) => {
+      if (e.target.closest('button, a')) e.preventDefault();
+    }, { passive: false });
+  </script>
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.3.1",
+      "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+      "lucide-react": "https://esm.sh/lucide-react@0.383.0?deps=react@18.3.1&external=react",
+      "recharts": "https://esm.sh/recharts@2.12.7?deps=react@18.3.1&external=react"
+    }
+  }
+  </script>
+  <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="loading">Indlæser FinansOverblik…</div>
+  <script type="text/babel" data-type="module" data-presets="react">
+import React, { useState, useEffect, useMemo } from "react";
+import { createRoot } from "react-dom/client";
+import { TrendingUp, DollarSign, PieChart, BarChart3, Wallet, Upload, RefreshCw, ArrowUpRight, ArrowDownRight, Coins, Plus, Globe, Bot, Zap, Shield, Home, CreditCard, Banknote, Landmark, Lock, Fingerprint, Key, Smartphone, Eye, EyeOff, Check, X, Settings, User, ChevronRight, Send, Download, Repeat, PiggyBank, Target, Plane, Car, Gift, Heart, Trophy, Sparkles, ShieldCheck, UserCheck, KeyRound, QrCode, Copy, LogOut, Bell, Cpu, Cloud, CloudOff, Wifi, WifiOff, Sliders, Wrench, Database, AlertTriangle, Info, Radio, Atom, Terminal, Briefcase } from "lucide-react";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart as RePieChart, Pie, Cell } from "recharts";
+
+
+// ==================== MOCK DATA ====================
+const MOCK_USER = {
+  name: "Luke",
+  email: "b88sg9wxk4@privaterelay.appleid.com",
+  avatar: "L",
+  memberSince: "Januar 2024"
+};
+
+const MOCK_ACCOUNTS = [
+  { id: 1, name: "Lønkonto", type: "checking", balance: 47500, currency: "DKK", number: "1234-5678-9012", color: "from-blue-600 to-indigo-700", cardType: "Visa Debit" },
+  { id: 2, name: "Rejse EUR", type: "multi-currency", balance: 1250, currency: "EUR", number: "EUR-0001", color: "from-purple-600 to-pink-600", cardType: "Multi-Currency" },
+  { id: 3, name: "USD Konto", type: "multi-currency", balance: 890, currency: "USD", number: "USD-0001", color: "from-green-600 to-emerald-700", cardType: "Multi-Currency" },
+];
+
+const MOCK_VAULTS = [
+  { id: 1, name: "Sommerferie 2026", iconName: "Plane", goal: 25000, current: 18500, color: "#f97316", deadline: "Juli 2026" },
+  { id: 2, name: "Ny iPhone 17", iconName: "Smartphone", goal: 12000, current: 4200, color: "#3b82f6", deadline: "September 2026" },
+  { id: 3, name: "Nødopsparing", iconName: "Shield", goal: 50000, current: 32500, color: "#22c55e", deadline: "Løbende" },
+  { id: 4, name: "Bil-opsparing", iconName: "Car", goal: 80000, current: 15800, color: "#8b5cf6", deadline: "2027" },
+];
+
+const VAULT_ICONS = { Plane, Smartphone, Shield, Car, Home, Heart, Gift, Trophy, Target, PiggyBank };
+
+const MOCK_TRANSACTIONS = [
+  { date: "2026-04-08", category: "Mad", description: "Netto", amount: -487, type: "expense", merchant: "Netto Supermarked" },
+  { date: "2026-04-07", category: "Shopping", description: "Zalando", amount: -799, type: "expense", merchant: "Zalando DK" },
+  { date: "2026-04-06", category: "Forsikring", description: "Indboforsikring", amount: -299, type: "expense", merchant: "Tryg" },
+  { date: "2026-04-05", category: "Mad", description: "Føtex", amount: -623, type: "expense", merchant: "Føtex" },
+  { date: "2026-04-04", category: "Underholdning", description: "Netflix", amount: -129, type: "expense", merchant: "Netflix" },
+  { date: "2026-04-03", category: "Transport", description: "DSB Rejsekort", amount: -350, type: "expense", merchant: "DSB" },
+  { date: "2026-04-02", category: "Mad", description: "Netto", amount: -487, type: "expense", merchant: "Netto" },
+  { date: "2026-04-01", category: "Bolig", description: "Husleje", amount: -8500, type: "expense", merchant: "Udlejer" },
+  { date: "2026-04-01", category: "Løn", description: "Månedsløn", amount: 35000, type: "income", merchant: "Arbejdsgiver A/S" },
+  { date: "2026-03-15", category: "Bolig", description: "Husleje", amount: -8500, type: "expense", merchant: "Udlejer" },
+  { date: "2026-03-15", category: "Løn", description: "Månedsløn", amount: 35000, type: "income", merchant: "Arbejdsgiver A/S" },
+  { date: "2026-03-18", category: "Sundhed", description: "Fitness World", amount: -249, type: "expense", merchant: "Fitness World" },
+  { date: "2026-03-20", category: "Transport", description: "Benzin", amount: -550, type: "expense", merchant: "Circle K" },
+  { date: "2026-03-22", category: "Mad", description: "Irma", amount: -892, type: "expense", merchant: "Irma" },
+];
+
+const MOCK_INVESTMENTS = [
+  { name: "Apple (AAPL)", type: "Aktie", shares: 15, avgPrice: 178.50, currentPrice: 195.20, currency: "USD" },
+  { name: "Novo Nordisk (NOVO-B)", type: "Aktie", shares: 50, avgPrice: 850, currentPrice: 920, currency: "DKK" },
+  { name: "Tesla (TSLA)", type: "Aktie", shares: 8, avgPrice: 245, currentPrice: 268, currency: "USD" },
+  { name: "Microsoft (MSFT)", type: "Aktie", shares: 10, avgPrice: 380, currentPrice: 425, currency: "USD" },
+  { name: "iShares S&P 500 (SXR8)", type: "ETF", shares: 25, avgPrice: 420, currentPrice: 458, currency: "EUR" },
+  { name: "Vanguard All-World (VWRL)", type: "ETF", shares: 40, avgPrice: 98, currentPrice: 105, currency: "EUR" },
+  { name: "iShares MSCI EM (IEMG)", type: "ETF", shares: 100, avgPrice: 48, currentPrice: 52, currency: "USD" },
+  { name: "Bitcoin (BTC)", type: "Crypto", shares: 0.5, avgPrice: 42000, currentPrice: 68500, currency: "USD" },
+  { name: "Ethereum (ETH)", type: "Crypto", shares: 5, avgPrice: 2200, currentPrice: 3450, currency: "USD" },
+  { name: "Solana (SOL)", type: "Crypto", shares: 50, avgPrice: 95, currentPrice: 148, currency: "USD" },
+  { name: "Guld (XAU)", type: "Råvare", shares: 2, avgPrice: 1950, currentPrice: 2340, currency: "USD" },
+  { name: "Olie (WTI)", type: "Råvare", shares: 20, avgPrice: 72, currentPrice: 78, currency: "USD" },
+];
+
+const MOCK_PENSION = [
+  { name: "ATP", value: 125000, monthlyContribution: 284, returnRate: 4.2 },
+  { name: "Arbejdsmarkedspension (PFA)", value: 485000, monthlyContribution: 5250, returnRate: 7.8 },
+  { name: "Ratepension", value: 230000, monthlyContribution: 2500, returnRate: 6.5 },
+  { name: "Aldersopsparing", value: 58200, monthlyContribution: 456, returnRate: 8.1 },
+];
+
+const CATEGORY_COLORS = {
+  "Bolig": "#ef4444", "Mad": "#f97316", "Transport": "#eab308",
+  "Underholdning": "#22c55e", "Forsikring": "#3b82f6", "Shopping": "#8b5cf6",
+  "Sundhed": "#ec4899", "Løn": "#10b981",
+};
+
+const EXCHANGE_RATES = { USD: 6.85, EUR: 7.46, DKK: 1, GBP: 8.65 };
+
+const MARKET_NEWS = [
+  { title: "Novo Nordisk slår forventninger i Q1", time: "2t siden", sentiment: "positive" },
+  { title: "Bitcoin nærmer sig ny all-time high", time: "4t siden", sentiment: "positive" },
+  { title: "Fed holder renten uændret", time: "6t siden", sentiment: "neutral" },
+  { title: "Oliepriserne falder på øget udbud", time: "8t siden", sentiment: "negative" },
+  { title: "S&P 500 rammer rekord", time: "12t siden", sentiment: "positive" },
+];
+
+// ==================== HELPERS ====================
+const formatMoney = (amount, currency = "DKK") => {
+  const symbols = { DKK: "kr.", USD: "$", EUR: "€", GBP: "£" };
+  const formatted = new Intl.NumberFormat("da-DK", { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(amount);
+  return currency === "DKK" ? `${formatted} kr.` : `${symbols[currency]}${formatted}`;
+};
+const formatDKK = (amount) => formatMoney(amount, "DKK");
+const formatPercent = (value) => `${value >= 0 ? "+" : ""}${value.toFixed(1)}%`;
+const toDKK = (amount, currency) => amount * (EXCHANGE_RATES[currency] || 1);
+
+// ==================== LOGIN / SECURITY ====================
+const LoginScreen = ({ onLogin }) => {
+  const [step, setStep] = useState("password");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [code, setCode] = useState(["", "", "", "", "", ""]);
+  const [selectedMethod, setSelectedMethod] = useState(null);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handlePasswordSubmit = (e) => {
+    e.preventDefault();
+    if (password.length < 4) {
+      setError("Adgangskode skal være mindst 4 tegn");
+      return;
+    }
+    setError("");
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setStep("2fa-select");
+    }, 600);
+  };
+
+  const handleMethodSelect = (method) => {
+    setSelectedMethod(method);
+    if (method === "passkey" || method === "yubikey") {
+      setLoading(true);
+      setTimeout(() => { setLoading(false); onLogin(); }, 1500);
+    } else {
+      setStep("totp");
+    }
+  };
+
+  const handleCodeChange = (idx, val) => {
+    if (val.length > 1) val = val.slice(-1);
+    if (!/^\d*$/.test(val)) return;
+    const newCode = [...code];
+    newCode[idx] = val;
+    setCode(newCode);
+    if (val && idx < 5) {
+      document.getElementById(`code-${idx + 1}`)?.focus();
+    }
+    if (newCode.every(c => c !== "") && newCode.join("").length === 6) {
+      setLoading(true);
+      setTimeout(() => { setLoading(false); onLogin(); }, 800);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 flex items-center justify-center p-4">
+      <div className="w-full max-w-md">
+        <div className="text-center mb-8">
+          <div className="inline-flex w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 items-center justify-center mb-3 shadow-2xl shadow-blue-500/30">
+            <DollarSign size={32} className="text-white" />
+          </div>
+          <h1 className="text-2xl font-bold text-white">FinansOverblik</h1>
+          <p className="text-blue-200 text-sm mt-1">Sikker login · End-to-end krypteret</p>
+        </div>
+
+        {step === "password" && (
+          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/20 shadow-2xl">
+            <h2 className="text-white text-lg font-semibold mb-1">Velkommen tilbage</h2>
+            <p className="text-blue-200 text-sm mb-5">Log ind på din konto</p>
+
+            <form onSubmit={handlePasswordSubmit} className="space-y-4">
+              <div>
+                <label className="text-xs text-blue-200 font-medium">Email</label>
+                <div className="mt-1 bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white text-sm">
+                  luke@finansoverblik.dk
+                </div>
+              </div>
+              <div>
+                <label className="text-xs text-blue-200 font-medium">Adgangskode</label>
+                <div className="mt-1 relative">
+                  <input type={showPassword ? "text" : "password"} value={password}
+                    onChange={e => setPassword(e.target.value)} placeholder="••••••••"
+                    className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-blue-400" />
+                  <button type="button" onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50">
+                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                  </button>
+                </div>
+              </div>
+              {error && <p className="text-red-300 text-xs">{error}</p>}
+              <button type="submit" disabled={loading}
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl py-3 font-semibold hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg disabled:opacity-50">
+                {loading ? "Verificerer..." : "Fortsæt"}
+              </button>
+            </form>
+
+            <div className="relative my-5">
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/10" /></div>
+              <div className="relative flex justify-center"><span className="bg-transparent px-2 text-xs text-blue-200">eller</span></div>
+            </div>
+
+            <button onClick={() => setStep("2fa-select")}
+              className="w-full bg-white/5 border border-white/20 text-white rounded-xl py-3 font-medium hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+              <Fingerprint size={18} /> Brug Face ID / Touch ID
+            </button>
+          </div>
+        )}
+
+        {step === "2fa-select" && (
+          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/20 shadow-2xl">
+            <div className="flex items-center gap-2 mb-1">
+              <ShieldCheck size={20} className="text-green-400" />
+              <h2 className="text-white text-lg font-semibold">To-faktor verifikation</h2>
+            </div>
+            <p className="text-blue-200 text-sm mb-5">Vælg din foretrukne metode</p>
+
+            {loading ? (
+              <div className="py-12 text-center">
+                <div className="inline-flex w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 items-center justify-center mb-4 animate-pulse">
+                  {selectedMethod === "yubikey" ? <Key size={28} className="text-white" /> :
+                   selectedMethod === "passkey" ? <Fingerprint size={28} className="text-white" /> :
+                   <Shield size={28} className="text-white" />}
+                </div>
+                <p className="text-white font-medium">
+                  {selectedMethod === "yubikey" ? "Tryk på din YubiKey nu..." :
+                   selectedMethod === "passkey" ? "Verificerer med Face ID..." :
+                   "Verificerer..."}
+                </p>
+                <p className="text-blue-200 text-xs mt-2">Venter på bekræftelse</p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                <MfaOption icon={Fingerprint} label="Apple Passkey" sub="Face ID / Touch ID" onClick={() => handleMethodSelect("passkey")} recommended />
+                <MfaOption icon={Key} label="YubiKey" sub="FIDO2 / WebAuthn" onClick={() => handleMethodSelect("yubikey")} />
+                <MfaOption icon={Smartphone} label="Google Authenticator" sub="TOTP 6-cifret kode" onClick={() => handleMethodSelect("totp")} />
+                <MfaOption icon={KeyRound} label="Yubico Authenticator" sub="TOTP med YubiKey" onClick={() => handleMethodSelect("totp")} />
+              </div>
+            )}
+          </div>
+        )}
+
+        {step === "totp" && (
+          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/20 shadow-2xl">
+            <div className="flex items-center gap-2 mb-1">
+              <Smartphone size={20} className="text-blue-400" />
+              <h2 className="text-white text-lg font-semibold">Indtast kode</h2>
+            </div>
+            <p className="text-blue-200 text-sm mb-5">Åbn din authenticator-app og indtast den 6-cifrede kode</p>
+
+            <div className="flex gap-2 justify-center mb-5">
+              {code.map((digit, idx) => (
+                <input key={idx} id={`code-${idx}`} type="text" maxLength={1} value={digit}
+                  onChange={e => handleCodeChange(idx, e.target.value)}
+                  className="w-11 h-14 text-center text-xl font-bold bg-white/5 border border-white/20 rounded-xl text-white focus:outline-none focus:border-blue-400" />
+              ))}
+            </div>
+
+            {loading && <p className="text-center text-blue-200 text-sm mb-3">Verificerer kode...</p>}
+
+            <button onClick={() => setStep("2fa-select")}
+              className="w-full text-blue-200 text-sm hover:text-white transition-colors">
+              ← Vælg anden metode
+            </button>
+          </div>
+        )}
+
+        <p className="text-center text-xs text-blue-200/60 mt-6">
+          🔒 Beskyttet af end-to-end kryptering & biometri
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const MfaOption = ({ icon: Icon, label, sub, onClick, recommended }) => (
+  <button onClick={onClick}
+    className="w-full bg-white/5 hover:bg-white/15 border border-white/10 hover:border-white/30 rounded-xl p-4 flex items-center gap-3 transition-all group">
+    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/30 to-purple-500/30 flex items-center justify-center flex-shrink-0">
+      <Icon size={20} className="text-white" />
+    </div>
+    <div className="flex-1 text-left">
+      <div className="flex items-center gap-2">
+        <p className="text-white font-medium text-sm">{label}</p>
+        {recommended && <span className="text-[10px] bg-green-500/20 text-green-300 px-2 py-0.5 rounded-full">Anbefalet</span>}
+      </div>
+      <p className="text-blue-200 text-xs">{sub}</p>
+    </div>
+    <ChevronRight size={18} className="text-white/40 group-hover:text-white/80" />
+  </button>
+);
+
+// ==================== NAVIGATION ====================
+const Nav = ({ active, setActive }) => {
+  const tabs = [
+    { id: "home", icon: Home, label: "Hjem" },
+    { id: "accounts", icon: Wallet, label: "Konti" },
+    { id: "invest", icon: TrendingUp, label: "Invest" },
+    { id: "ai", icon: Bot, label: "AI" },
+    { id: "profile", icon: User, label: "Mig" },
+  ];
+  return (
+    <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-lg border-t border-gray-200 z-40 px-2 pb-5 pt-2" style={{ paddingBottom: "env(safe-area-inset-bottom, 20px)" }}>
+      <div className="flex justify-around max-w-lg mx-auto">
+        {tabs.map(({ id, icon: Icon, label }) => (
+          <button key={id} onClick={() => setActive(id)}
+            className={`flex flex-col items-center gap-1 px-3 py-1 rounded-xl transition-all ${active === id ? 'text-blue-600' : 'text-gray-400'}`}>
+            <Icon size={22} strokeWidth={active === id ? 2.5 : 1.8} />
+            <span className="text-[10px] font-medium">{label}</span>
+          </button>
+        ))}
+      </div>
+    </nav>
+  );
+};
+
+// ==================== HOME PAGE ====================
+const HomePage = ({ accounts, vaults, transactions, investments, pension, setActivePage }) => {
+  const [hideBalance, setHideBalance] = useState(false);
+  const totalBalance = accounts.reduce((s, a) => s + toDKK(a.balance, a.currency), 0);
+  const totalVaults = vaults.reduce((s, v) => s + v.current, 0);
+  const totalInvest = investments.reduce((s, i) => s + toDKK(i.currentPrice * i.shares, i.currency), 0);
+  const totalPension = pension.reduce((s, p) => s + p.value, 0);
+  const netWorth = totalBalance + totalVaults + totalInvest + totalPension;
+
+  const monthSpend = Math.abs(transactions.filter(t => t.type === "expense" && t.date >= "2026-04-01").reduce((s, t) => s + t.amount, 0));
+  const monthIncome = transactions.filter(t => t.type === "income" && t.date >= "2026-04-01").reduce((s, t) => s + t.amount, 0);
+
+  return (
+    <div className="space-y-5">
+      <div className="flex items-center justify-between">
+        <div>
+          <p className="text-sm text-gray-500">God dag,</p>
+          <h1 className="text-2xl font-bold text-gray-900">{MOCK_USER.name} 👋</h1>
+        </div>
+        <button className="relative">
+          <Bell size={22} className="text-gray-600" />
+          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white" />
+        </button>
+      </div>
+
+      <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 rounded-3xl p-6 text-white shadow-xl relative overflow-hidden">
+        <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/5 rounded-full blur-2xl" />
+        <div className="relative">
+          <div className="flex items-center justify-between mb-1">
+            <p className="text-blue-200 text-sm font-medium">Samlet formue</p>
+            <button onClick={() => setHideBalance(!hideBalance)} className="text-blue-200 p-1">
+              {hideBalance ? <EyeOff size={16} /> : <Eye size={16} />}
+            </button>
+          </div>
+          <h2 className="text-4xl font-bold mb-4 tracking-tight">
+            {hideBalance ? "•••••• kr." : formatDKK(netWorth)}
+          </h2>
+          <div className="grid grid-cols-2 gap-2 text-xs">
+            <div className="bg-white/10 backdrop-blur rounded-xl p-2.5">
+              <p className="text-blue-200">Likvid</p>
+              <p className="text-white font-semibold text-sm">{hideBalance ? "••••" : formatDKK(totalBalance)}</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-2.5">
+              <p className="text-blue-200">Opsparing</p>
+              <p className="text-white font-semibold text-sm">{hideBalance ? "••••" : formatDKK(totalVaults)}</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-2.5">
+              <p className="text-blue-200">Investering</p>
+              <p className="text-white font-semibold text-sm">{hideBalance ? "••••" : formatDKK(totalInvest)}</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-2.5">
+              <p className="text-blue-200">Pension</p>
+              <p className="text-white font-semibold text-sm">{hideBalance ? "••••" : formatDKK(totalPension)}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-4 gap-2">
+        {[
+          { icon: Send, label: "Send", color: "bg-blue-500" },
+          { icon: Download, label: "Modtag", color: "bg-green-500" },
+          { icon: Repeat, label: "Veksl", color: "bg-purple-500" },
+          { icon: Plus, label: "Tilføj", color: "bg-orange-500" },
+        ].map((a, i) => (
+          <button key={i} className="flex flex-col items-center gap-1.5 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+            <div className={`w-10 h-10 rounded-xl ${a.color} flex items-center justify-center shadow-sm`}>
+              <a.icon size={18} className="text-white" />
+            </div>
+            <span className="text-xs font-medium text-gray-700">{a.label}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="font-semibold text-gray-900">April 2026</h3>
+          <button onClick={() => setActivePage("accounts")} className="text-xs text-blue-600 font-medium">Se alt →</button>
+        </div>
+        <div className="grid grid-cols-2 gap-3">
+          <div className="bg-green-50 rounded-xl p-3">
+            <div className="flex items-center gap-2 mb-1">
+              <ArrowUpRight size={14} className="text-green-600" />
+              <span className="text-xs text-green-600 font-medium">Indtægt</span>
+            </div>
+            <p className="text-lg font-bold text-green-700">{formatDKK(monthIncome)}</p>
+          </div>
+          <div className="bg-red-50 rounded-xl p-3">
+            <div className="flex items-center gap-2 mb-1">
+              <ArrowDownRight size={14} className="text-red-600" />
+              <span className="text-xs text-red-600 font-medium">Udgifter</span>
+            </div>
+            <p className="text-lg font-bold text-red-700">{formatDKK(monthSpend)}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="font-semibold text-gray-900">Mine opsparingsmål</h3>
+          <button onClick={() => setActivePage("accounts")} className="text-xs text-blue-600 font-medium">Se alle →</button>
+        </div>
+        <div className="space-y-3">
+          {vaults.slice(0, 2).map(v => {
+            const Icon = VAULT_ICONS[v.iconName] || PiggyBank;
+            const pct = (v.current / v.goal) * 100;
+            return (
+              <div key={v.id}>
+                <div className="flex items-center justify-between mb-1.5">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: v.color + "20" }}>
+                      <Icon size={15} style={{ color: v.color }} />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-gray-800">{v.name}</p>
+                      <p className="text-xs text-gray-400">{formatDKK(v.current)} / {formatDKK(v.goal)}</p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-semibold text-gray-700">{pct.toFixed(0)}%</span>
+                </div>
+                <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                  <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: v.color }} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <h3 className="font-semibold text-gray-900 mb-4">Seneste aktivitet</h3>
+        <div className="space-y-3">
+          {transactions.slice(0, 5).map((t, i) => (
+            <div key={i} className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: (CATEGORY_COLORS[t.category] || "#6b7280") + "15" }}>
+                  {t.type === "income" ? <ArrowUpRight size={16} className="text-green-600" /> :
+                   <ArrowDownRight size={16} style={{ color: CATEGORY_COLORS[t.category] || "#6b7280" }} />}
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-gray-900">{t.merchant || t.description}</p>
+                  <p className="text-xs text-gray-400">{t.category} · {t.date}</p>
+                </div>
+              </div>
+              <span className={`text-sm font-semibold ${t.amount >= 0 ? 'text-green-600' : 'text-gray-900'}`}>
+                {t.amount >= 0 ? '+' : ''}{formatDKK(t.amount)}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ==================== ACCOUNTS PAGE ====================
+const AccountsPage = ({ accounts, setAccounts, vaults, setVaults, transactions }) => {
+  const [showAddVault, setShowAddVault] = useState(false);
+  const [newVault, setNewVault] = useState({ name: "", goal: "", iconName: "PiggyBank" });
+  const [showTopUp, setShowTopUp] = useState(null);
+  const [topUpAmount, setTopUpAmount] = useState("");
+
+  const iconChoices = ["PiggyBank", "Plane", "Smartphone", "Car", "Home", "Heart", "Gift", "Trophy", "Target"];
+
+  const addVault = () => {
+    if (!newVault.name || !newVault.goal) return;
+    const colors = ["#f97316", "#3b82f6", "#22c55e", "#8b5cf6", "#ec4899", "#eab308"];
+    setVaults(prev => [...prev, {
+      id: Date.now(),
+      name: newVault.name,
+      iconName: newVault.iconName,
+      goal: Number(newVault.goal),
+      current: 0,
+      color: colors[prev.length % colors.length],
+      deadline: "Løbende"
+    }]);
+    setNewVault({ name: "", goal: "", iconName: "PiggyBank" });
+    setShowAddVault(false);
+  };
+
+  const topUpVault = (vaultId) => {
+    const amount = Number(topUpAmount);
+    if (!amount || amount <= 0) return;
+    setVaults(prev => prev.map(v => v.id === vaultId ? { ...v, current: v.current + amount } : v));
+    setAccounts(prev => prev.map(a => a.id === 1 ? { ...a, balance: a.balance - amount } : a));
+    setTopUpAmount("");
+    setShowTopUp(null);
+  };
+
+  const deleteVault = (id) => {
+    const vault = vaults.find(v => v.id === id);
+    if (vault) {
+      setAccounts(prev => prev.map(a => a.id === 1 ? { ...a, balance: a.balance + vault.current } : a));
+      setVaults(prev => prev.filter(v => v.id !== id));
+    }
+  };
+
+  return (
+    <div className="space-y-5">
+      <h2 className="text-2xl font-bold text-gray-900">Mine konti</h2>
+
+      <div className="flex gap-3 overflow-x-auto pb-2 -mx-5 px-5 snap-x snap-mandatory">
+        {accounts.map(acc => (
+          <div key={acc.id}
+            className={`flex-shrink-0 w-64 snap-center bg-gradient-to-br ${acc.color} rounded-2xl p-5 text-white shadow-lg`}>
+            <div className="flex justify-between items-start mb-6">
+              <div>
+                <p className="text-white/70 text-xs">{acc.cardType}</p>
+                <p className="font-semibold text-sm">{acc.name}</p>
+              </div>
+              <CreditCard size={22} className="text-white/80" />
+            </div>
+            <div className="mb-3">
+              <p className="text-white/70 text-xs mb-1">Saldo</p>
+              <p className="text-2xl font-bold tracking-tight">{formatMoney(acc.balance, acc.currency)}</p>
+            </div>
+            <p className="text-white/60 text-[10px] tracking-widest">{acc.number}</p>
+          </div>
+        ))}
+        <div className="flex-shrink-0 w-64 snap-center bg-gray-50 border-2 border-dashed border-gray-200 rounded-2xl p-5 flex items-center justify-center cursor-pointer hover:bg-gray-100">
+          <div className="text-center">
+            <Plus size={24} className="text-gray-400 mx-auto mb-1" />
+            <p className="text-sm text-gray-500">Ny konto</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-4 gap-2">
+        {[
+          { icon: Send, label: "Overfør", color: "bg-blue-500" },
+          { icon: Plus, label: "Indsæt", color: "bg-green-500" },
+          { icon: Repeat, label: "Veksl", color: "bg-purple-500" },
+          { icon: QrCode, label: "Betal", color: "bg-orange-500" },
+        ].map((a, i) => (
+          <button key={i} className="flex flex-col items-center gap-1.5 py-3 bg-white rounded-2xl shadow-sm border border-gray-100">
+            <div className={`w-9 h-9 rounded-xl ${a.color} flex items-center justify-center`}>
+              <a.icon size={16} className="text-white" />
+            </div>
+            <span className="text-[11px] font-medium text-gray-700">{a.label}</span>
+          </button>
+        ))}
+      </div>
+
+      <div>
+        <div className="flex items-center justify-between mb-3">
+          <div>
+            <h3 className="font-semibold text-gray-900 text-lg">Opsparinger</h3>
+            <p className="text-xs text-gray-500">Sæt penge til side til dine mål</p>
+          </div>
+          <button onClick={() => setShowAddVault(true)}
+            className="bg-blue-600 text-white rounded-xl p-2.5 hover:bg-blue-700 shadow-sm">
+            <Plus size={18} />
+          </button>
+        </div>
+
+        {showAddVault && (
+          <div className="bg-blue-50 rounded-2xl p-4 mb-3 border border-blue-100">
+            <h4 className="font-medium text-blue-900 mb-3">Opret nyt opsparingsmål</h4>
+            <div className="space-y-2">
+              <input type="text" placeholder="Navn (fx 'Ny cykel')" value={newVault.name}
+                onChange={e => setNewVault({...newVault, name: e.target.value})}
+                className="w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm bg-white" />
+              <input type="number" placeholder="Målbeløb (DKK)" value={newVault.goal}
+                onChange={e => setNewVault({...newVault, goal: e.target.value})}
+                className="w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm bg-white" />
+              <div>
+                <p className="text-xs text-gray-600 mb-2">Vælg ikon</p>
+                <div className="flex gap-2 flex-wrap">
+                  {iconChoices.map(name => {
+                    const Icon = VAULT_ICONS[name];
+                    return (
+                      <button key={name} onClick={() => setNewVault({...newVault, iconName: name})}
+                        className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${newVault.iconName === name ? 'bg-blue-600 text-white' : 'bg-white border border-gray-200 text-gray-600'}`}>
+                        <Icon size={16} />
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="flex gap-2 pt-1">
+                <button onClick={addVault} className="flex-1 bg-blue-600 text-white rounded-xl py-2.5 text-sm font-medium">Opret</button>
+                <button onClick={() => setShowAddVault(false)} className="flex-1 bg-white text-gray-700 rounded-xl py-2.5 text-sm border border-gray-200">Annuller</button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div className="grid grid-cols-2 gap-3">
+          {vaults.map(v => {
+            const Icon = VAULT_ICONS[v.iconName] || PiggyBank;
+            const pct = Math.min((v.current / v.goal) * 100, 100);
+            return (
+              <div key={v.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 relative">
+                <button onClick={() => deleteVault(v.id)} className="absolute top-2 right-2 text-gray-300 hover:text-red-500 p-1">
+                  <X size={14} />
+                </button>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-2" style={{ backgroundColor: v.color + "20" }}>
+                  <Icon size={18} style={{ color: v.color }} />
+                </div>
+                <p className="text-sm font-semibold text-gray-900 mb-0.5 truncate">{v.name}</p>
+                <p className="text-xs text-gray-400 mb-2">{v.deadline}</p>
+                <p className="text-lg font-bold text-gray-900">{formatDKK(v.current)}</p>
+                <p className="text-[10px] text-gray-500 mb-2">af {formatDKK(v.goal)} mål</p>
+                <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-2">
+                  <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: v.color }} />
+                </div>
+                {showTopUp === v.id ? (
+                  <div className="space-y-1">
+                    <input type="number" placeholder="Beløb" value={topUpAmount}
+                      onChange={e => setTopUpAmount(e.target.value)}
+                      className="w-full rounded-lg border border-gray-200 px-2 py-1 text-xs" />
+                    <div className="flex gap-1">
+                      <button onClick={() => topUpVault(v.id)} className="flex-1 bg-blue-600 text-white rounded-lg py-1 text-xs font-medium">OK</button>
+                      <button onClick={() => setShowTopUp(null)} className="flex-1 bg-gray-100 text-gray-700 rounded-lg py-1 text-xs">Fortryd</button>
+                    </div>
+                  </div>
+                ) : (
+                  <button onClick={() => setShowTopUp(v.id)} className="w-full bg-gray-50 hover:bg-gray-100 rounded-lg py-1.5 text-xs font-medium text-gray-700 flex items-center justify-center gap-1">
+                    <Plus size={12} /> Indbetal
+                  </button>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <h3 className="font-semibold text-gray-900 mb-4">Transaktioner</h3>
+        <div className="space-y-3 max-h-80 overflow-y-auto">
+          {transactions.slice(0, 12).map((t, i) => (
+            <div key={i} className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: (CATEGORY_COLORS[t.category] || "#6b7280") + "15" }}>
+                  {t.type === "income" ? <ArrowUpRight size={14} className="text-green-600" /> :
+                   <ArrowDownRight size={14} style={{ color: CATEGORY_COLORS[t.category] || "#6b7280" }} />}
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-gray-900">{t.merchant || t.description}</p>
+                  <p className="text-xs text-gray-400">{t.category} · {t.date}</p>
+                </div>
+              </div>
+              <span className={`text-sm font-semibold ${t.amount >= 0 ? 'text-green-600' : 'text-gray-900'}`}>
+                {t.amount >= 0 ? '+' : ''}{formatDKK(t.amount)}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ==================== INVESTMENTS PAGE ====================
+const InvestmentsPage = ({ investments }) => {
+  const [filter, setFilter] = useState("Alle");
+  const types = ["Alle", "Aktie", "ETF", "Crypto", "Råvare"];
+  const filtered = filter === "Alle" ? investments : investments.filter(i => i.type === filter);
+
+  const totalValue = investments.reduce((s, i) => s + toDKK(i.currentPrice * i.shares, i.currency), 0);
+  const totalCost = investments.reduce((s, i) => s + toDKK(i.avgPrice * i.shares, i.currency), 0);
+  const totalReturn = totalValue - totalCost;
+  const totalReturnPct = (totalReturn / totalCost) * 100;
+
+  const performanceData = [
+    { m: "Nov", v: totalCost * 0.92 },
+    { m: "Dec", v: totalCost * 0.95 },
+    { m: "Jan", v: totalCost * 0.98 },
+    { m: "Feb", v: totalCost * 1.02 },
+    { m: "Mar", v: totalCost * 1.06 },
+    { m: "Apr", v: totalValue },
+  ];
+
+  return (
+    <div className="space-y-5">
+      <h2 className="text-2xl font-bold text-gray-900">Investeringer</h2>
+
+      <div className="bg-gradient-to-br from-purple-600 to-indigo-700 rounded-3xl p-6 text-white shadow-xl">
+        <p className="text-purple-200 text-sm mb-1">Porteføljeværdi</p>
+        <h2 className="text-3xl font-bold mb-2">{formatDKK(totalValue)}</h2>
+        <span className={`text-sm px-3 py-1 rounded-lg ${totalReturn >= 0 ? 'bg-green-500/20 text-green-200' : 'bg-red-500/20 text-red-200'}`}>
+          {totalReturn >= 0 ? "↑" : "↓"} {formatDKK(Math.abs(totalReturn))} ({formatPercent(totalReturnPct)})
+        </span>
+      </div>
+
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <h3 className="font-semibold text-gray-900 mb-4">Udvikling</h3>
+        <ResponsiveContainer width="100%" height={180}>
+          <AreaChart data={performanceData}>
+            <defs>
+              <linearGradient id="colorP" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3}/>
+                <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0}/>
+              </linearGradient>
+            </defs>
+            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+            <XAxis dataKey="m" tick={{ fontSize: 12 }} stroke="#9ca3af" />
+            <YAxis tick={{ fontSize: 11 }} stroke="#9ca3af" tickFormatter={v => `${(v/1000).toFixed(0)}k`} />
+            <Tooltip formatter={(value) => formatDKK(value)} />
+            <Area type="monotone" dataKey="v" stroke="#8b5cf6" fill="url(#colorP)" strokeWidth={2} />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
+
+      <div className="flex gap-2 overflow-x-auto pb-1">
+        {types.map(type => (
+          <button key={type} onClick={() => setFilter(type)}
+            className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap ${filter === type ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600'}`}>
+            {type}
+          </button>
+        ))}
+      </div>
+
+      <div className="space-y-2">
+        {filtered.map((inv, i) => {
+          const value = toDKK(inv.currentPrice * inv.shares, inv.currency);
+          const cost = toDKK(inv.avgPrice * inv.shares, inv.currency);
+          const gain = value - cost;
+          const gainPct = (gain / cost) * 100;
+          return (
+            <div key={i} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
+                  inv.type === "Aktie" ? "bg-blue-50" : inv.type === "ETF" ? "bg-purple-50" :
+                  inv.type === "Crypto" ? "bg-orange-50" : "bg-yellow-50"}`}>
+                  {inv.type === "Aktie" ? <BarChart3 size={18} className="text-blue-500" /> :
+                   inv.type === "ETF" ? <PieChart size={18} className="text-purple-500" /> :
+                   inv.type === "Crypto" ? <Coins size={18} className="text-orange-500" /> :
+                   <Globe size={18} className="text-yellow-500" />}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">{inv.name}</p>
+                  <p className="text-xs text-gray-500">{inv.shares} enheder</p>
+                </div>
+              </div>
+              <div className="text-right">
+                <p className="text-sm font-bold text-gray-900">{formatDKK(value)}</p>
+                <p className={`text-xs font-medium ${gain >= 0 ? 'text-green-600' : 'text-red-600'}`}>{formatPercent(gainPct)}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+// ==================== AI MODELS CONFIG ====================
+const AI_MODELS = {
+  "gemma-3n-e4b": {
+    name: "Gemma 3n E4B",
+    provider: "Google · Lokal",
+    size: "4.1 GB",
+    context: "32K tokens",
+    mode: "offline",
+    description: "On-device model med selective parameter activation. Optimeret til M2 Pro & iPhone 15 Pro.",
+    runtime: "MLX / llama.cpp",
+    strengths: ["Privat (offline)", "Hurtig", "Tool-calling"],
+  },
+  "claude-sonnet-4-6": {
+    name: "Claude Sonnet 4.6",
+    provider: "Anthropic · Cloud",
+    size: "—",
+    context: "200K tokens",
+    mode: "online",
+    description: "Anthropic's stærkeste reasoning-model. Fremragende til finansanalyse.",
+    runtime: "API",
+    strengths: ["Lang kontekst", "Dyb analyse", "Safe defaults"],
+  },
+  "gpt-5": {
+    name: "GPT-5",
+    provider: "OpenAI · Cloud",
+    size: "—",
+    context: "128K tokens",
+    mode: "online",
+    description: "OpenAI's flagship. God til tool-calling og real-time markedsdata.",
+    runtime: "API",
+    strengths: ["Tool-calling", "Markedsdata", "Multimodal"],
+  },
+  "gemini-2-pro": {
+    name: "Gemini 2.0 Pro",
+    provider: "Google · Cloud",
+    size: "—",
+    context: "1M tokens",
+    mode: "online",
+    description: "Google's flagship. Integrerer sømløst med Gemma offline-fallback.",
+    runtime: "API",
+    strengths: ["1M kontekst", "Hybrid mode", "Real-time data"],
+  },
+};
+
+// ==================== AI AGENT PAGE ====================
+const AIAgentPage = () => {
+  const [query, setQuery] = useState("");
+  const [messages, setMessages] = useState([
+    { role: "bot", text: "Hej Luke! Jeg er din AI-finansagent, kører på Gemma 3n E4B lokalt på din M2 Pro. Dine data forlader aldrig enheden medmindre du skifter til cloud-mode. Spørg om aktier, crypto, portefølje-analyse, eller brug /tools for avancerede kommandoer." }
+  ]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedModel, setSelectedModel] = useState("gemma-3n-e4b");
+  const [showSettings, setShowSettings] = useState(false);
+  const [isOnline, setIsOnline] = useState(false);
+  const [temperature, setTemperature] = useState(0.7);
+  const [maxTokens, setMaxTokens] = useState(2048);
+  const [systemPrompt, setSystemPrompt] = useState("Du er en avanceret finansagent med adgang til brugerens portefølje, transaktioner, og realtids-markedsdata. Svar præcist på dansk. Brug tools når nødvendigt.");
+  const [enabledTools, setEnabledTools] = useState({
+    marketData: true,
+    portfolio: true,
+    transactions: true,
+    webSearch: false,
+    codeExecution: false,
+  });
+
+  const currentModel = AI_MODELS[selectedModel];
+  const modelIsOffline = currentModel.mode === "offline";
+
+  const watchlist = [
+    { symbol: "AAPL", price: 195.20, change: 2.3 },
+    { symbol: "BTC", price: 68500, change: 4.1 },
+    { symbol: "NOVO-B", price: 920, change: -0.8 },
+    { symbol: "XAU", price: 2340, change: 1.2 },
+    { symbol: "ETH", price: 3450, change: 3.5 },
+    { symbol: "WTI", price: 78, change: -1.4 },
+  ];
+
+  const generateResponse = (q) => {
+    const l = q.toLowerCase();
+    const modelPrefix = `[${currentModel.name}${modelIsOffline ? " · offline" : " · cloud"}] `;
+    if (l.startsWith("/tools")) return modelPrefix + "Tilgængelige tools: get_market_data(symbol), get_portfolio(), get_transactions(from, to), analyze_risk(), forecast_returns(years), tax_optimization(). Aktivér/deaktivér i indstillingerne.";
+    if (l.startsWith("/status")) return modelPrefix + `Model: ${currentModel.name}. Mode: ${modelIsOffline ? "Offline (E2E krypteret lokalt)" : "Online (TLS 1.3 + cert pinning)"}. Temperatur: ${temperature}. Kontekst: ${currentModel.context}. Post-quantum: aktiv.`;
+    if (l.includes("bitcoin") || l.includes("btc")) return modelPrefix + "Bitcoin (BTC) handler pt. omkring $68.500 — op ca. 4,1% de seneste 24 timer. RSI 68 (let overkøbt). Din BTC-position (0,5 BTC) har givet +63% afkast. Anbefaling: hold positionen, overvej profit-taking ved $72k.";
+    if (l.includes("guld")) return modelPrefix + "Guld (XAU) handles til $2.340/oz — op 1,2% i dag. Teknisk analyse viser stærkt support ved $2.280. Din guldposition (2 oz) er steget 20% fra købsprisen. Fortsat bullish outlook pga. rente-usikkerhed.";
+    if (l.includes("novo")) return modelPrefix + "Novo Nordisk (NOVO-B) handles til 920 DKK. P/E: 31. Din position giver +8,2% urealiseret afkast. GLP-1 pipeline ser stærk ud. Dog høj værdiansættelse — overvej at tage profit ved 1000 DKK.";
+    if (l.includes("portefølje") || l.includes("analyse")) return modelPrefix + "Porteføljeanalyse: Samlet værdi ~440k kr, +12% afkast. Risikovurdering: HØJ (Sharpe ratio 1.4, beta 1.2). Crypto-eksponering 24% er over anbefalet 10-15%. Anbefaling: Rebalancér mod flere ETF'er for bedre risk-adjusted returns.";
+    if (l.includes("risiko") || l.includes("risk")) return modelPrefix + "Risikoanalyse udført. Value-at-Risk (95%): -28.400 kr over 1 måned. Max drawdown sidste 6 mdr: -8,3%. Diversificering-score: 6,2/10. Primær risiko: crypto-koncentration.";
+    if (l.includes("skat") || l.includes("tax")) return modelPrefix + "Skatteoptimering: Du har ~12k kr i urealiserede tab som kunne tax-loss harvestes. Aktiesparekontoens loft (166k) er delvist udnyttet. Pensionsindbetalinger udnytter ikke fuld fradrag — overvej at indbetale yderligere ~8k til ratepension.";
+    if (l.includes("marked") || l.includes("nyheder")) return modelPrefix + "Aktuelle nyheder: Novo slog Q1 (+12% YoY), BTC nær ATH, Fed holder rente på 4.5%, S&P500 rekord, olie under pres fra OPEC+ supply increase.";
+    return modelPrefix + "Interessant spørgsmål! Prøv at spørge specifikt om en aktie, ETF, crypto, guld, olie — eller brug /tools for avancerede kommandoer som risikoanalyse og skatteoptimering.";
+  };
+
+  const handleSend = () => {
+    if (!query.trim()) return;
+    setMessages(prev => [...prev, { role: "user", text: query }]);
+    const q = query;
+    setQuery("");
+    setIsLoading(true);
+    const delay = modelIsOffline ? 400 : 1100;
+    setTimeout(() => {
+      setMessages(prev => [...prev, { role: "bot", text: generateResponse(q) }]);
+      setIsLoading(false);
+    }, delay);
+  };
+
+  const selectModel = (key) => {
+    setSelectedModel(key);
+    const model = AI_MODELS[key];
+    setMessages(prev => [...prev, {
+      role: "system",
+      text: `Skiftet til ${model.name} · ${model.mode === "offline" ? "Offline mode (data forlader ikke enheden)" : "Cloud mode (TLS 1.3 + certificate pinning aktivt)"}`
+    }]);
+  };
+
+  const watchlist = [
+    { symbol: "AAPL", price: 195.20, change: 2.3 },
+    { symbol: "BTC", price: 68500, change: 4.1 },
+    { symbol: "NOVO-B", price: 920, change: -0.8 },
+    { symbol: "XAU", price: 2340, change: 1.2 },
+    { symbol: "ETH", price: 3450, change: 3.5 },
+    { symbol: "WTI", price: 78, change: -1.4 },
+  ];
+
+  const generateResponse = (q) => {
+    const l = q.toLowerCase();
+    if (l.includes("bitcoin") || l.includes("btc")) return "Bitcoin (BTC) handler pt. omkring $68.500 — op ca. 4,1% de seneste 24 timer. Markedsstemningen er bullish.";
+    if (l.includes("guld")) return "Guld (XAU) handles til $2.340/oz — op 1,2% i dag. Din guldposition er steget 20% fra købsprisen.";
+    if (l.includes("novo")) return "Novo Nordisk (NOVO-B) handles til 920 DKK. Din position giver +8,2% urealiseret afkast.";
+    if (l.includes("portefølje")) return "Din samlede portefølje er ca. 440.000 kr. med urealiseret afkast på ~12%.";
+    if (l.includes("marked") || l.includes("nyheder")) return "Aktuelle nyheder: Novo Nordisk slog Q1-forventninger, BTC nær ATH, Fed holder rente.";
+    return "Interessant spørgsmål! Prøv at spørge specifikt om en aktie, ETF, crypto, guld eller olie.";
+  };
+
+  const handleSend = () => {
+    if (!query.trim()) return;
+    setMessages(prev => [...prev, { role: "user", text: query }]);
+    const q = query;
+    setQuery("");
+    setIsLoading(true);
+    setTimeout(() => {
+      setMessages(prev => [...prev, { role: "bot", text: generateResponse(q) }]);
+      setIsLoading(false);
+    }, 700);
+  };
+
+  return (
+    <div className="space-y-5">
+      {/* Header with model status */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative">
+            <Bot size={22} className="text-white" />
+            <div className={`absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full border-2 border-white ${modelIsOffline ? 'bg-green-500' : 'bg-blue-500'}`} />
+          </div>
+          <div>
+            <h2 className="text-xl font-bold text-gray-900">AI Finansagent</h2>
+            <p className="text-xs text-gray-500 flex items-center gap-1">
+              {modelIsOffline ? <WifiOff size={11} /> : <Wifi size={11} />}
+              {currentModel.name} · {modelIsOffline ? "Offline" : "Cloud"}
+            </p>
+          </div>
+        </div>
+        <button onClick={() => setShowSettings(!showSettings)}
+          className={`p-2 rounded-xl ${showSettings ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-600'}`}>
+          <Sliders size={18} />
+        </button>
+      </div>
+
+      {/* Security banner */}
+      <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-2xl p-3 flex items-center gap-3">
+        <div className="w-9 h-9 rounded-xl bg-emerald-500 flex items-center justify-center flex-shrink-0">
+          <Atom size={18} className="text-white" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-xs font-semibold text-emerald-900">Post-Quantum beskyttet</p>
+          <p className="text-[10px] text-emerald-700">Kyber-1024 KEM · Dilithium-5 signatur · AES-256-GCM · E2E</p>
+        </div>
+        <ShieldCheck size={18} className="text-emerald-600 flex-shrink-0" />
+      </div>
+
+      {/* Model Settings Panel */}
+      {showSettings && (
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+          <div className="p-4 border-b border-gray-100 bg-gray-50">
+            <h3 className="font-semibold text-gray-900 text-sm flex items-center gap-2">
+              <Cpu size={16} /> Model & Runtime
+            </h3>
+          </div>
+
+          {/* Model picker */}
+          <div className="p-4 space-y-2 border-b border-gray-100">
+            <p className="text-xs text-gray-500 mb-2">Vælg AI-model</p>
+            {Object.entries(AI_MODELS).map(([key, model]) => (
+              <button key={key} onClick={() => selectModel(key)}
+                className={`w-full text-left p-3 rounded-xl border-2 transition-all ${selectedModel === key ? 'border-blue-500 bg-blue-50' : 'border-gray-100 bg-white'}`}>
+                <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center gap-2">
+                    {model.mode === "offline" ? <CloudOff size={14} className="text-green-600" /> : <Cloud size={14} className="text-blue-600" />}
+                    <span className="font-semibold text-sm text-gray-900">{model.name}</span>
+                  </div>
+                  {selectedModel === key && <Check size={16} className="text-blue-600" />}
+                </div>
+                <p className="text-[10px] text-gray-500 mb-1">{model.provider} · {model.context} · {model.runtime}</p>
+                <p className="text-[11px] text-gray-600">{model.description}</p>
+                <div className="flex gap-1 mt-1.5 flex-wrap">
+                  {model.strengths.map((s, i) => (
+                    <span key={i} className="text-[9px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full">{s}</span>
+                  ))}
+                </div>
+              </button>
+            ))}
+          </div>
+
+          {/* Inference parameters */}
+          <div className="p-4 space-y-3 border-b border-gray-100">
+            <p className="text-xs text-gray-500">Inference-parametre</p>
+            <div>
+              <div className="flex justify-between mb-1">
+                <label className="text-xs text-gray-600">Temperatur</label>
+                <span className="text-xs font-mono font-semibold text-gray-900">{temperature.toFixed(1)}</span>
+              </div>
+              <input type="range" min="0" max="2" step="0.1" value={temperature}
+                onChange={e => setTemperature(Number(e.target.value))}
+                className="w-full accent-blue-600" />
+              <div className="flex justify-between text-[9px] text-gray-400">
+                <span>Præcis</span><span>Balanceret</span><span>Kreativ</span>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between mb-1">
+                <label className="text-xs text-gray-600">Max tokens</label>
+                <span className="text-xs font-mono font-semibold text-gray-900">{maxTokens}</span>
+              </div>
+              <input type="range" min="256" max="8192" step="256" value={maxTokens}
+                onChange={e => setMaxTokens(Number(e.target.value))}
+                className="w-full accent-blue-600" />
+            </div>
+          </div>
+
+          {/* System prompt */}
+          <div className="p-4 space-y-2 border-b border-gray-100">
+            <div className="flex items-center justify-between">
+              <label className="text-xs text-gray-500 flex items-center gap-1"><Terminal size={12} /> System prompt</label>
+              <span className="text-[10px] text-gray-400">{systemPrompt.length} tegn</span>
+            </div>
+            <textarea value={systemPrompt} onChange={e => setSystemPrompt(e.target.value)}
+              rows={4}
+              className="w-full bg-gray-50 border border-gray-200 rounded-xl p-2.5 text-xs font-mono text-gray-800 focus:outline-none focus:border-blue-400 resize-none" />
+            <p className="text-[10px] text-gray-400">Du har fuld kontrol over agentens instruktioner og opførsel</p>
+          </div>
+
+          {/* Tools */}
+          <div className="p-4">
+            <p className="text-xs text-gray-500 mb-2 flex items-center gap-1"><Wrench size={12} /> Tool-calling (MCP)</p>
+            {[
+              { key: "marketData", label: "Market Data API", sub: "Live kurser på aktier, ETF, crypto, råvarer", icon: TrendingUp, color: "#3b82f6" },
+              { key: "portfolio", label: "Portfolio Access", sub: "Læs-adgang til portefølje & positioner", icon: Briefcase, color: "#8b5cf6" },
+              { key: "transactions", label: "Transaction History", sub: "Kategoriserede transaktioner", icon: Database, color: "#22c55e" },
+              { key: "webSearch", label: "Web Search", sub: "Sender queries til Brave Search API", icon: Globe, color: "#f97316" },
+              { key: "codeExecution", label: "Code Execution", sub: "Kør Python sandbox til analyse", icon: Terminal, color: "#ef4444" },
+            ].map(tool => (
+              <ToolToggle key={tool.key} tool={tool}
+                enabled={enabledTools[tool.key]}
+                onToggle={() => setEnabledTools(p => ({...p, [tool.key]: !p[tool.key]}))} />
+            ))}
+          </div>
+
+          {/* Warning for risky tools */}
+          {(enabledTools.codeExecution || enabledTools.webSearch) && (
+            <div className="m-4 mt-0 bg-amber-50 border border-amber-200 rounded-xl p-3 flex gap-2">
+              <AlertTriangle size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
+              <p className="text-[11px] text-amber-800">Nogle aktiverede tools kan sende data ud af dit lokale miljø. Sørg for, at du stoler på modellen.</p>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Watchlist */}
+      <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+        <h3 className="font-semibold text-gray-900 mb-3 text-sm">Watchlist</h3>
+        <div className="grid grid-cols-3 gap-2">
+          {watchlist.map((item, i) => (
+            <div key={i} className="bg-gray-50 rounded-xl p-3 text-center">
+              <p className="text-xs text-gray-500 mb-0.5">{item.symbol}</p>
+              <p className="text-sm font-bold text-gray-900">
+                {item.price > 1000 ? `$${(item.price/1000).toFixed(1)}k` : `$${item.price}`}
+              </p>
+              <span className={`text-xs font-medium ${item.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                {item.change >= 0 ? "↑" : "↓"}{Math.abs(item.change)}%
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Chat */}
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        <div className="p-3 bg-gray-50 border-b border-gray-100 flex items-center justify-between">
+          <p className="text-xs font-medium text-gray-700 flex items-center gap-1.5">
+            {modelIsOffline ? <CloudOff size={13} className="text-green-600" /> : <Cloud size={13} className="text-blue-600" />}
+            {currentModel.name}
+          </p>
+          <span className="text-[10px] text-gray-400">temp: {temperature} · tokens: {maxTokens}</span>
+        </div>
+        <div className="p-4 space-y-3 max-h-72 overflow-y-auto">
+          {messages.map((msg, i) => (
+            <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : msg.role === "system" ? "justify-center" : "justify-start"}`}>
+              {msg.role === "system" ? (
+                <div className="bg-amber-50 border border-amber-200 rounded-full px-3 py-1">
+                  <p className="text-[10px] text-amber-800 flex items-center gap-1"><Info size={10} /> {msg.text}</p>
+                </div>
+              ) : (
+                <div className={`max-w-xs rounded-2xl px-4 py-2.5 ${msg.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-800"}`}>
+                  <p className="text-sm whitespace-pre-wrap">{msg.text}</p>
+                </div>
+              )}
+            </div>
+          ))}
+          {isLoading && (
+            <div className="flex justify-start">
+              <div className="bg-gray-100 rounded-2xl px-4 py-3 flex items-center gap-2">
+                <div className="flex gap-1">
+                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" />
+                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0.1s" }} />
+                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }} />
+                </div>
+                <span className="text-[10px] text-gray-400">{modelIsOffline ? "Kører på M2 Pro..." : "Streamer fra cloud..."}</span>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="p-3 border-t border-gray-100 flex gap-2">
+          <input type="text" value={query} onChange={e => setQuery(e.target.value)}
+            onKeyDown={e => e.key === "Enter" && handleSend()}
+            placeholder="Spørg eller brug /tools, /status..."
+            className="flex-1 bg-gray-50 rounded-xl px-4 py-2.5 text-sm border border-gray-200 focus:outline-none focus:border-blue-400" />
+          <button onClick={handleSend} className="bg-blue-600 text-white rounded-xl px-4 py-2.5">
+            <Zap size={18} />
+          </button>
+        </div>
+      </div>
+
+      {/* Quick Commands */}
+      <div className="flex gap-2 flex-wrap">
+        {["/status", "/tools", "Analysér portefølje", "Risikoanalyse", "Skatteoptimering", "Markedsnyheder"].map((cmd, i) => (
+          <button key={i} onClick={() => setQuery(cmd)}
+            className="bg-white border border-gray-200 rounded-full px-3 py-1.5 text-[11px] text-gray-600 hover:bg-gray-50 transition-colors">
+            {cmd}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const ToolToggle = ({ tool, enabled, onToggle }) => {
+  const Icon = tool.icon;
+  return (
+    <div className="flex items-center gap-3 py-2">
+      <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: tool.color + "15" }}>
+        <Icon size={15} style={{ color: tool.color }} />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs font-semibold text-gray-900">{tool.label}</p>
+        <p className="text-[10px] text-gray-500">{tool.sub}</p>
+      </div>
+      <button onClick={onToggle}
+        className={`w-9 h-5 rounded-full transition-colors relative flex-shrink-0 ${enabled ? 'bg-green-500' : 'bg-gray-200'}`}>
+        <div className={`w-4 h-4 bg-white rounded-full shadow-md absolute top-0.5 transition-all ${enabled ? 'left-4' : 'left-0.5'}`} />
+      </button>
+    </div>
+  );
+};
+
+// ==================== PROFILE / SECURITY PAGE ====================
+const SecurityRow = ({ icon: Icon, title, sub, enabled, onToggle, color }) => (
+  <div className="p-4 flex items-center gap-3">
+    <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: color + "15" }}>
+      <Icon size={18} style={{ color }} />
+    </div>
+    <div className="flex-1">
+      <p className="font-medium text-gray-900 text-sm">{title}</p>
+      <p className="text-xs text-gray-500">{sub}</p>
+    </div>
+    <button onClick={onToggle}
+      className={`w-11 h-6 rounded-full transition-colors relative ${enabled ? 'bg-green-500' : 'bg-gray-200'}`}>
+      <div className={`w-5 h-5 bg-white rounded-full shadow-md absolute top-0.5 transition-all ${enabled ? 'left-5' : 'left-0.5'}`} />
+    </button>
+  </div>
+);
+
+const MenuRow = ({ icon: Icon, title, sub, onClick, danger }) => (
+  <button onClick={onClick} className={`w-full p-4 flex items-center gap-3 border-b border-gray-50 last:border-0 hover:bg-gray-50 ${danger ? 'text-red-600' : ''}`}>
+    <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${danger ? 'bg-red-50' : 'bg-gray-50'}`}>
+      <Icon size={18} className={danger ? 'text-red-500' : 'text-gray-600'} />
+    </div>
+    <div className="flex-1 text-left">
+      <p className={`font-medium text-sm ${danger ? 'text-red-600' : 'text-gray-900'}`}>{title}</p>
+      {sub && <p className="text-xs text-gray-500">{sub}</p>}
+    </div>
+    {!danger && <ChevronRight size={18} className="text-gray-400" />}
+  </button>
+);
+
+const ProfilePage = ({ pension, onLogout }) => {
+  const [showSecurity, setShowSecurity] = useState(false);
+  const [mfaEnabled, setMfaEnabled] = useState({
+    passkey: true, yubikey: false, googleAuth: true, yubicoAuth: false, biometric: true,
+  });
+  const [showQR, setShowQR] = useState(false);
+
+  const totalPension = pension.reduce((s, p) => s + p.value, 0);
+
+  if (showSecurity) {
+    return (
+      <div className="space-y-5">
+        <div className="flex items-center gap-3">
+          <button onClick={() => setShowSecurity(false)} className="text-gray-600 text-lg">←</button>
+          <h2 className="text-2xl font-bold text-gray-900">Sikkerhed</h2>
+        </div>
+
+        <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-5 text-white">
+          <div className="flex items-center gap-3 mb-2">
+            <ShieldCheck size={24} />
+            <p className="font-semibold">Sikkerhedsniveau: Maksimum</p>
+          </div>
+          <p className="text-green-100 text-xs mb-3">Din konto er beskyttet med 2FA, biometri og post-quantum kryptografi</p>
+          <div className="flex flex-wrap gap-1.5">
+            <span className="text-[10px] bg-white/20 backdrop-blur px-2 py-0.5 rounded-full">AES-256-GCM</span>
+            <span className="text-[10px] bg-white/20 backdrop-blur px-2 py-0.5 rounded-full">Kyber-1024</span>
+            <span className="text-[10px] bg-white/20 backdrop-blur px-2 py-0.5 rounded-full">Dilithium-5</span>
+            <span className="text-[10px] bg-white/20 backdrop-blur px-2 py-0.5 rounded-full">Argon2id</span>
+            <span className="text-[10px] bg-white/20 backdrop-blur px-2 py-0.5 rounded-full">Secure Enclave</span>
+            <span className="text-[10px] bg-white/20 backdrop-blur px-2 py-0.5 rounded-full">TLS 1.3</span>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+          <div className="flex items-center gap-2 mb-3">
+            <Atom size={18} className="text-purple-600" />
+            <h3 className="font-semibold text-gray-900 text-sm">Post-Quantum Kryptografi</h3>
+          </div>
+          <div className="space-y-2 text-xs">
+            <div className="flex justify-between items-center py-1.5 border-b border-gray-50">
+              <div>
+                <p className="font-medium text-gray-800">Kyber-1024 (ML-KEM)</p>
+                <p className="text-[10px] text-gray-400">Nøgleudveksling · NIST standard</p>
+              </div>
+              <span className="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-medium">Aktiv</span>
+            </div>
+            <div className="flex justify-between items-center py-1.5 border-b border-gray-50">
+              <div>
+                <p className="font-medium text-gray-800">Dilithium-5 (ML-DSA)</p>
+                <p className="text-[10px] text-gray-400">Digital signatur · NIST standard</p>
+              </div>
+              <span className="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-medium">Aktiv</span>
+            </div>
+            <div className="flex justify-between items-center py-1.5 border-b border-gray-50">
+              <div>
+                <p className="font-medium text-gray-800">SPHINCS+</p>
+                <p className="text-[10px] text-gray-400">Hash-baseret backup-signatur</p>
+              </div>
+              <span className="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-medium">Aktiv</span>
+            </div>
+            <div className="flex justify-between items-center py-1.5">
+              <div>
+                <p className="font-medium text-gray-800">Hybrid X25519 + Kyber</p>
+                <p className="text-[10px] text-gray-400">Klassisk + PQ for maks sikkerhed</p>
+              </div>
+              <span className="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-medium">Aktiv</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+          <div className="p-4 border-b border-gray-100">
+            <h3 className="font-semibold text-gray-900">Autentificeringsmetoder</h3>
+            <p className="text-xs text-gray-500 mt-1">Administrer 2FA/MFA metoder</p>
+          </div>
+          <div className="divide-y divide-gray-50">
+            <SecurityRow icon={Fingerprint} title="Apple Passkey" sub="Face ID / Touch ID / Apple Passwords"
+              enabled={mfaEnabled.passkey} onToggle={() => setMfaEnabled(p => ({...p, passkey: !p.passkey}))} color="#3b82f6" />
+            <SecurityRow icon={Key} title="YubiKey" sub="FIDO2 / WebAuthn hardware"
+              enabled={mfaEnabled.yubikey} onToggle={() => setMfaEnabled(p => ({...p, yubikey: !p.yubikey}))} color="#22c55e" />
+            <SecurityRow icon={Smartphone} title="Google Authenticator" sub="TOTP 6-cifret kode"
+              enabled={mfaEnabled.googleAuth} onToggle={() => setMfaEnabled(p => ({...p, googleAuth: !p.googleAuth}))} color="#f97316" />
+            <SecurityRow icon={KeyRound} title="Yubico Authenticator" sub="TOTP med YubiKey"
+              enabled={mfaEnabled.yubicoAuth} onToggle={() => setMfaEnabled(p => ({...p, yubicoAuth: !p.yubicoAuth}))} color="#8b5cf6" />
+            <SecurityRow icon={UserCheck} title="Biometrisk login" sub="Face ID / Touch ID"
+              enabled={mfaEnabled.biometric} onToggle={() => setMfaEnabled(p => ({...p, biometric: !p.biometric}))} color="#ec4899" />
+          </div>
+        </div>
+
+        <button onClick={() => setShowQR(!showQR)}
+          className="w-full bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center">
+              <QrCode size={20} className="text-purple-600" />
+            </div>
+            <div className="text-left">
+              <p className="font-semibold text-gray-900 text-sm">Setup ny authenticator</p>
+              <p className="text-xs text-gray-500">Vis QR-kode til scanning</p>
+            </div>
+          </div>
+          <ChevronRight size={18} className="text-gray-400" />
+        </button>
+
+        {showQR && (
+          <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
+            <div className="inline-block bg-gray-100 rounded-2xl p-6 mb-3">
+              <div className="w-40 h-40 bg-white p-3 rounded-xl">
+                <div className="w-full h-full grid grid-cols-10 gap-0.5">
+                  {Array.from({length: 100}).map((_, i) => (
+                    <div key={i} className={`${(i * 7 + 3) % 3 === 0 ? 'bg-gray-900' : 'bg-white'} rounded-sm`} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-gray-700 mb-2">Scan med Google Authenticator, Yubico Authenticator eller Apple Passwords</p>
+            <div className="bg-gray-50 rounded-xl p-3 text-xs font-mono text-gray-600 flex items-center justify-between">
+              <span className="truncate">JBSW Y3DP EHPK 3PXP</span>
+              <Copy size={14} className="text-gray-400 flex-shrink-0" />
+            </div>
+          </div>
+        )}
+
+        <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Sikkerhedsaktivitet</h3>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-center gap-3">
+              <Check size={16} className="text-green-500 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="text-gray-800">Login fra MacBook Pro M2</p>
+                <p className="text-xs text-gray-400">I dag, 14:32</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Check size={16} className="text-green-500 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="text-gray-800">Login fra iPhone 15 Pro</p>
+                <p className="text-xs text-gray-400">I går, 19:15</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Check size={16} className="text-green-500 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="text-gray-800">2FA aktiveret: Apple Passkey</p>
+                <p className="text-xs text-gray-400">2 dage siden</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-5">
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex items-center gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+          {MOCK_USER.avatar}
+        </div>
+        <div className="flex-1 min-w-0">
+          <h2 className="text-lg font-bold text-gray-900">{MOCK_USER.name}</h2>
+          <p className="text-xs text-gray-500 truncate">{MOCK_USER.email}</p>
+          <p className="text-xs text-gray-400 mt-0.5">Medlem siden {MOCK_USER.memberSince}</p>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-5 text-white">
+        <div className="flex items-center gap-2 mb-1">
+          <Landmark size={18} />
+          <p className="text-pink-100 text-sm font-medium">Pension</p>
+        </div>
+        <h3 className="text-2xl font-bold">{formatDKK(totalPension)}</h3>
+        <p className="text-pink-100 text-xs mt-1">Gennemsnitligt afkast 6,7%</p>
+      </div>
+
+      <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <h3 className="font-semibold text-gray-900 mb-3">Pensionskonti</h3>
+        <div className="space-y-3">
+          {pension.map((p, i) => (
+            <div key={i} className="flex justify-between items-center pb-3 border-b border-gray-50 last:border-0 last:pb-0">
+              <div>
+                <p className="font-medium text-gray-800 text-sm">{p.name}</p>
+                <p className="text-xs text-gray-400">Mdl. {formatDKK(p.monthlyContribution)} · +{p.returnRate}%</p>
+              </div>
+              <p className="font-bold text-gray-900">{formatDKK(p.value)}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        <MenuRow icon={Shield} title="Sikkerhed" sub="2FA, YubiKey, Passkeys" onClick={() => setShowSecurity(true)} />
+        <MenuRow icon={Settings} title="Indstillinger" sub="Notifikationer, sprog, valuta" />
+        <MenuRow icon={Upload} title="Importer data" sub="CSV/JSON fra Spiir" />
+        <MenuRow icon={Bell} title="Notifikationer" sub="Alerts & advarsler" />
+        <MenuRow icon={LogOut} title="Log ud" sub="" onClick={onLogout} danger />
+      </div>
+
+      <p className="text-center text-xs text-gray-400">FinansOverblik v1.0 · iPhone 15 Pro & MacBook Pro</p>
+    </div>
+  );
+};
+
+// ==================== MAIN APP ====================
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [activePage, setActivePage] = useState("home");
+  const [accounts, setAccounts] = useState(MOCK_ACCOUNTS);
+  const [vaults, setVaults] = useState(MOCK_VAULTS);
+  const [transactions] = useState(MOCK_TRANSACTIONS);
+  const [investments, setInvestments] = useState(MOCK_INVESTMENTS);
+  const [pension] = useState(MOCK_PENSION);
+
+  if (!isAuthenticated) {
+    return <LoginScreen onLogin={() => setIsAuthenticated(true)} />;
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50" style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', system-ui, sans-serif" }}>
+      <header className="sticky top-0 bg-white/80 backdrop-blur-lg border-b border-gray-100 z-30 px-5 py-3">
+        <div className="max-w-lg mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+              <DollarSign size={18} className="text-white" />
+            </div>
+            <h1 className="text-base font-bold text-gray-900">FinansOverblik</h1>
+            <ShieldCheck size={14} className="text-green-500" />
+          </div>
+          <button onClick={() => {
+            setInvestments(prev => prev.map(inv => ({...inv, currentPrice: inv.currentPrice * (1 + (Math.random() - 0.48) * 0.03)})));
+          }} className="p-2 rounded-xl bg-gray-100">
+            <RefreshCw size={16} className="text-gray-600" />
+          </button>
+        </div>
+      </header>
+
+      <main className="max-w-lg mx-auto px-5 py-5 pb-28">
+        {activePage === "home" && <HomePage accounts={accounts} vaults={vaults} transactions={transactions} investments={investments} pension={pension} setActivePage={setActivePage} />}
+        {activePage === "accounts" && <AccountsPage accounts={accounts} setAccounts={setAccounts} vaults={vaults} setVaults={setVaults} transactions={transactions} />}
+        {activePage === "invest" && <InvestmentsPage investments={investments} />}
+        {activePage === "ai" && <AIAgentPage />}
+        {activePage === "profile" && <ProfilePage pension={pension} onLogout={() => setIsAuthenticated(false)} />}
+      </main>
+
+      <Nav active={activePage} setActive={setActivePage} />
+    </div>
+  );
+}
+
+// mount
+const root = createRoot(document.getElementById("root"));
+root.render(<FinansDashboard />);
+document.getElementById("loading")?.remove();
+</script>
+
+</body></html>
