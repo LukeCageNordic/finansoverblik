@@ -1,2 +1,1 @@
-# finansoverblik
-Personligt finansoverblik PWA
+# index.html
